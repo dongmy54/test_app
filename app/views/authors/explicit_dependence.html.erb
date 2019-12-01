@@ -1,0 +1,19 @@
+<h3>显示依赖</h3>
+<p>片段缓存中使用helper,在helper中动态渲染时；如果不指定显示指定依赖,缓存不能正常更新</p>
+
+<div>
+  <% cache @author do %>
+    <div class="card">
+      <h5>作者信息</h5>
+      <div class="card-body">
+        <p>id: <%= @author.id %></p>
+        <p>name: <%= @author.name %></p>
+        
+        <%# Template Dependency: authors/big_age %>
+        <%# Template Dependency: authors/small_age %>
+        <p><%= render_diff_by_age(@author) %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+

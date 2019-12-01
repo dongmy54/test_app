@@ -1,0 +1,22 @@
+<h3>sql缓存</h3>
+<p>同一个请求action中，相同的sql会被缓存在内存中，再次执行，直接从内存中读取</p>
+
+<div>
+  <table class="table">
+    <thead>
+      <th>id</th>
+      <th>姓名</th>
+      <th>年龄</th>
+    </thead>
+
+    <tbody>
+      <% @authors.each do |author| %>
+        <tr>
+          <td><%= author.id %></td>
+          <td><%= author.name %></td>
+          <td><%= author.age %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

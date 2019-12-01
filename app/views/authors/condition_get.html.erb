@@ -1,0 +1,16 @@
+<h3>条件get请求</h3>
+<p>浏览器中缓存，利用http请求头 条件请求头 If-None-Match（etag值资源版本表识）、If-Modified-Since(上次修改时间)</p>
+
+<div>
+  <% cache @author do %>
+    <div class="card">
+      <h5>作者信息</h5>
+      <div class="card-body">
+        <p>id: <%= @author.id %></p>
+        <p>name: <%= @author.name %></p>
+        <p>age: <%= @author.age %></p>
+      </div>
+    </div>
+    <p>增加内容</p>
+  <% end %>
+</div>

@@ -1,0 +1,17 @@
+<h3>片段缓存: 对象数组</h3>
+<p>views/authors/303-20191126100651606879000/articles/1203-20191126100651626618000/b1ee07c81da0eae1fd840c7c5aaa1835</p>
+
+
+<div>
+  <% cache [@author,@article] do %>
+    <div class="card">
+      <h5>作者信息</h5>
+      <div class="card-body">
+        <p>首篇文章标题：<%= @article.title %></p>
+        <p>id: <%= @author.id %></p>
+        <p>name: <%= @author.name %></p>
+        <p>age: <%= @author.age %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,17 @@
+<h3>片段缓存: 集合</h3>
+<p> 类似于each缓存 rails 5才支持 性能更好 一次读取所有缓存模版</p>
+
+<div>
+  <table class="table">
+    <thead>
+      <th>id</th>
+      <th>姓名</th>
+      <th>年龄</th>
+    </thead>
+
+    <tbody>
+      <!-- 简写形式  rails 5才支持 所有条目一次缓存-->
+      <%= render partial: 'authors/author', collection: @authors, cached: true %>
+    </tbody>
+  </table>
+</div>

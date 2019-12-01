@@ -1,0 +1,19 @@
+<h3>外部依赖</h3>
+<p>片段缓存中，使用helper方法 方法如果更新了,需要同步更新</p>
+
+<div>
+  <% cache @author do %>
+    <div class="card">
+      <h5>作者信息</h5>
+      <div class="card-body">
+        <p>id: <%= @author.id %></p>
+        <p>name: <%= @author.name %></p>
+        <p>age:<%= @author.age %></p>
+
+        <%# Helper Dependence Updated: 2019.12.2 %>
+        <%= some_method %>
+      </div>
+    </div>
+  <% end %>
+</div>
+

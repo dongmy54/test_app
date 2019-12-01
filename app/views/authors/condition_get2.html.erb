@@ -1,0 +1,15 @@
+<h3>条件get请求：fresh_when</h3>
+
+<div>
+  <% cache @author do %>
+    <div class="card">
+      <h5>作者信息</h5>
+      <div class="card-body">
+        <p>id: <%= @author.id %></p>
+        <p>name: <%= @author.name %></p>
+        <p>age: <%= @author.age %></p>
+      </div>
+    </div>
+    <p>增加内容</p>
+  <% end %>
+</div>

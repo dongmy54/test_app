@@ -1,0 +1,30 @@
+<h3>俄罗斯套娃缓存: 不使用存在问题</h3>
+
+<div>
+  <table class="table">
+    <thead>
+      <th>id</th>
+      <th>姓名</th>
+      <th>年龄</th>
+      <th>文章信息</th>
+    </thead>
+
+    <tbody>
+      <% @authors.each do |author| %>
+        <% cache author do %>
+          <tr>
+            <td><%= author.id %></td>
+            <td><%= author.name %></td>
+            <td><%= author.age %></td>
+            <td>
+              <% author.articles.each do |aricle| %>
+                <span><%= aricle.title %></span>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+

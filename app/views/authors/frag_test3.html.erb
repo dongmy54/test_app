@@ -1,0 +1,13 @@
+<h3>片段缓存：过期时间</h3>
+<p>设定10s后过期: views/my_cache_key/6c260298e90a834925b7</p>
+
+<div>
+  <!-- 指定过期时间 需指定键-->
+  <% cache 'my_cache_key',expires_in: 1.hour do %>
+    <div class="card">
+      <div class="card-body">
+        缓存一段html内容，当内部内容改变缓存自动失效;根据摘要生成键 hsad
+      </div>
+    </div>
+  <% end %>
+</div>

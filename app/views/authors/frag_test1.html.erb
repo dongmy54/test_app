@@ -1,0 +1,15 @@
+<h3>片段缓存: 对象键</h3>
+<p>views/authors/312-20191126100651882354000/c26a8d66b3b0055caf45f28d4006d776</p>
+
+<div>
+  <% cache @author do %>
+    <div class="card">
+      <h5>作者信息</h5>
+      <div class="card-body">
+        <p>id: <%= @author.id %></p>
+        <p>name: <%= @author.name %></p>
+        <p>age: <%= @author.age %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

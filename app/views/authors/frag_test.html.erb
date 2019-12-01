@@ -1,0 +1,12 @@
+<h3>片段缓存：不指定键</h3>
+<p>views/localhost:3000/authors/frag_test/f2fec4a82cbe6d238505079892c26cb1 (0.0ms)</p>
+<div>
+  <% cache do %>
+    <div class="card">
+      <div class="card-body">
+        缓存一段html内容，当内部内容改变缓存自动失效;根据摘要生成键
+      </div>
+    </div>
+  <% end %>
+</div>
+
