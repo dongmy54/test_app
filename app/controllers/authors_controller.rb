@@ -96,7 +96,7 @@ class AuthorsController < ApplicationController
   end
 
   # 俄罗斯套娃缓存
-  # 貌似不起作用
+  # 特别注意 内部更新需要 touch外部更新 以便获取最新缓存
   def russia_cache1
     @authors = Author.all.limit(10)
   end
