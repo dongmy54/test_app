@@ -61,6 +61,10 @@ class AuthorsController < ApplicationController
     end
   end
 
+  # 分享列表
+  def home_list
+  end
+
   ############################### 片段缓存开始 #############################
   # 不指定任何
   def frag_test

@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="container">
+    <%= link_to '分享列表', '/', class: 'btn btn-sm btn-warning' unless params['action'] == 'home_list' %>
     <%= yield %>
   </div>
 </body>
