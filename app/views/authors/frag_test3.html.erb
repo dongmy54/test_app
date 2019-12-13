@@ -3,7 +3,7 @@
 
 <div>
   <!-- 指定过期时间 需指定键-->
-  <% cache 'my_cache_key',expires_in: 1.hour do %>
+  <% cache 'my_cache_key',expires_in: 10.seconds do %>
     <div class="card">
       <div class="card-body">
         缓存一段html内容，当内部内容改变缓存自动失效;根据摘要生成键 hsad

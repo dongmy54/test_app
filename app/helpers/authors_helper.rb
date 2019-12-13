@@ -11,7 +11,7 @@ module AuthorsHelper
   
   # 外部依赖
   def some_method
-    "<p>你们好! haoah</p>".html_safe
+    "<p>你们好! hjl</p>".html_safe
   end
 
 end
