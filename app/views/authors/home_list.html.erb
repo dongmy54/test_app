@@ -6,7 +6,6 @@
 </style>
 
 
-
 <div class="jumbotron">
   <h1 class="display-4">分享主题：rails缓存</h1>
   <hr class="my-4">
@@ -14,29 +13,16 @@
     1.配置缓存
   </button>
 
+  <div class="collapse" id="collapseExample5">
+    <ul class="list-group">
+      <li class="list-group-item"><%= link_to '配置缓存', 'https://github.com/dongmy54/learn-note/blob/develop/rails/%E7%BC%93%E5%AD%98/config.md', target: '_blank',class: 'btn btn-warning' %></li>
+    </ul>
+  </div>
+
   <button class="btn  btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     2.片段缓存
   </button>
 
-  <button class="btn  btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-    3.俄罗斯套娃缓存
-  </button>
-  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-    4.sql缓存
-  </button>
-
-  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-    5.条件get缓存
-  </button>
-
-  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-    6.片段缓存使用helper问题
-  </button>
-
-  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
-    7.其它
-  </button>
-</p>
   <div class="collapse" id="collapseExample">
     <ul class="list-group">
       <li class="list-group-item"><%= link_to '片段缓存：不指定键', frag_test_authors_path, class: 'btn btn-warning' %></li>
@@ -47,6 +33,10 @@
     </ul>
   </div>
 
+  <button class="btn  btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+    3.俄罗斯套娃缓存
+  </button>
+  
   <div class="collapse" id="collapseExample1">
     <ul class="list-group">
       <li class="list-group-item"><%= link_to '俄罗斯套娃缓存: 不使用存在问题', russia_cache_authors_path, class: 'btn btn-warning' %></li>
@@ -54,11 +44,19 @@
     </ul>
   </div>
 
+  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+    4.sql缓存
+  </button>
+
   <div class="collapse" id="collapseExample2">
     <ul class="list-group">
       <li class="list-group-item"><%= link_to 'sql缓存', sql_cache_authors_path, class: 'btn btn-warning' %></li>
     </ul>
   </div>
+
+  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+    5.条件get缓存
+  </button>
 
   <div class="collapse" id="collapseExample3">
     <ul class="list-group">
@@ -68,6 +66,10 @@
     </ul>
   </div>
 
+  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+    6.片段缓存使用helper问题
+  </button>
+
   <div class="collapse" id="collapseExample4">
     <ul class="list-group">
       <li class="list-group-item"><%= link_to '显示依赖', explicit_dependence_author_path(id: 303), class: 'btn btn-warning' %></li>
@@ -75,11 +77,9 @@
     </ul>
   </div>
 
-  <div class="collapse" id="collapseExample5">
-    <ul class="list-group">
-      <li class="list-group-item"><%= link_to '配置缓存', 'https://github.com/dongmy54/learn-note/blob/develop/rails/%E7%BC%93%E5%AD%98/config.md', target: '_blank',class: 'btn btn-warning' %></li>
-    </ul>
-  </div>
+  <button class="btn btn-n btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+    7.其它
+  </button>
 
   <div class="collapse" id="collapseExample6">
     <ul class="list-group">
