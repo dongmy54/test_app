@@ -140,7 +140,7 @@ class AuthorsController < ApplicationController
     # 给对象
     if stale?(@author)
       respond_to do |format|
-        format.html {render :condition_get}
+        format.html {render :condition_get1}
       end
     end
   end
