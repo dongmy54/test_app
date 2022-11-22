@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap', '~> 4.3.1'
 
-gem 'dalli', '2.7.2'
+gem 'dalli', '3.2.3'
 gem 'redis', '4.1.3'
 gem 'redis-rails', '4.0.0'
 group :development, :test do
